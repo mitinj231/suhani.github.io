@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>Happy Birthday</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .videopart {
+          
+            /* margin-left: 5%; */
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            margin-top: 200px;
+            margin: auto;
+            /* position: absolute; */
+        }
+
+        .video1 {
+    box-shadow: 2px 2px 200px 5px rgb(96, 77, 0);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video1:hover {
+    transform: scale(1.05); /* Slightly enlarge the video on hover */
+    box-shadow: 2px 2px 200px 10px rgba(255, 165, 0, 0.7); /* Enhance shadow color and size */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="loader">
+                <button id="play">
+                    <p>
+                        Lets begin
+                    </p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <audio class="song" controls loop>
+        <source src="music.mp3">
+        </source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+    <canvas id="confetti"></canvas>
+    <div class="main">
+        <div class="container pt-5">
+            <div class="row">
+
+                <div class="col-12 col-xl-6 mx-auto">
+                    <img src="img/banner.png" alt="">
+                </div>
+
+                <div class="col-12  text-center">
+                    <div id="name" class="area">Suhani</div>
+                </div>
+
+                <div class="col-12 text-center">
+                    <div class="type-wrap">
+                        <div id="typed-strings" class="typing">
+                            <h2>
+                                Hii 19 saal ki Suhani!
+                            </h2>
+
+                            <h5>
+                                May your day be filled with 🎉😊
+                            </h5>
+                            <h5>
+                                laughter,love,and
+                            </h5>
+                            <h5>
+                                all the joy you bring to others!
+                            </h5>
+                        </div>
+                        <span id="typed" style="white-space:pre;"></span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-3 cake" style="">
+                    <img src="img/cake.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <img src="img/Balloon-Border.png" width="100%" class="balloon-border">
+    </div>
+    <div class="videopart">
+        <video src="Suhani (1).mp4" class="video1" muted></video>
+    </div>
+    <div class="final">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ullam, iste qui ex unde odit quos consectetur
+        incidunt veniam suscipit. Iusto alias iste quidem cumque repudiandae aut facilis esse iure, est facere
+        architecto aperiam accusamus beatae? Earum obcaecati possimus incidunt laudantium quo atque suscipit quis.
+        Voluptate, mollitia. Enim, modi? Reiciendis atque placeat dicta officia nesciunt! Vero labore expedita rem omnis
+        natus vitae quasi temporibus iste deleniti laudantium, cupiditate libero assumenda voluptate numquam itaque
+        quisquam, dicta officiis suscipit consequuntur. Quasi, eveniet voluptatem tempore dolorum suscipit earum
+        architecto natus aut? Perspiciatis hic odit placeat voluptatem totam facere, voluptates similique adipisci
+        expedita dolore.
+    </div>
+</body>
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
