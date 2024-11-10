@@ -1,7 +1,9 @@
+
 var sf = new Snowflakes({
-    color: "#ffd700",
-    minSize: 20
+    color: "#FEFAEE",
+    minSize: 40
 });
+
 var url_string = window.location.href; //window.location.href
 var url = new URL(url_string);
 var c = url.searchParams.get("name");
@@ -431,15 +433,32 @@ const video = document.querySelector('.video1');
 // Create an intersection observer
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (entry.intersectionRatio >= 0.8) {  // 80% of video height visible
+        if (entry.intersectionRatio >= 0.85) {  // 80% of video height visible
             video.play();  // Start the video
         } else {
             video.pause();  // Pause the video
         }
     });
 }, {
-    threshold: 0.8 // Trigger when 80% of the video is visible
+    threshold: 0.85 // Trigger when 80% of the video is visible
 });
 
 // Observe the video element
 observer.observe(video);
+const video2 = document.querySelector('.video2');
+
+// Create an intersection observer
+const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.intersectionRatio >= 0.8) {  // 80% of video2 height visible
+            video2.play();  // Start the video2
+        } else {
+            video2.pause();  // Pause the video2
+        }
+    });
+}, {
+    threshold: 0.8 // Trigger when 80% of the video2 is visible
+});
+
+// Observe the video2 element
+observer2.observe(video2);

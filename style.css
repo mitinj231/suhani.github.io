@@ -1,32 +1,4 @@
-/* customizable snowflake styling */
-.loader button {
-    width: 50%;
-    height: 100px;
-    position: fixed;
-    left: 50%;
-    top: 45%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
-    background: center no-repeat #fff;
-    z-index: 9999999999999999999999;
-    font-size: 50px;
-    outline: none;
-    box-sizing: border-box;
-    border: none;
-    border-radius: .3em;
-    text-transform: uppercase;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(110, 80, 20, .4),
-        inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
-        inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
-    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
-    border: 1px solid #a55d07;
-    color: rgb(120, 50, 5);
-    text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-    background-size: 100% 100%;
-    background-position: center;
-}
+
 
 .golden-btn:focus,
 .golden-btn:hover {
@@ -51,7 +23,10 @@
     width: 100%;
     height: 100%;
     z-index: 999;
-    background: url(img/back.png) center no-repeat #000;
+    background: url(img/final\ sticker.png) center no-repeat #ffcfcf;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: auto 60vh; 
     
 }
 
@@ -129,9 +104,50 @@ img {
     top: 3%;
     /* padding-top: 100px; */
 }
-#play>p{
+.theta {
+    padding: 7px;
     
-    width: 100%;
-    height: 100%;
-    font-size: 3rem;
+    position: fixed;
+    left: 50%;
+    top: 80%;
+    transform: translateY(-50%) translateX(-50%);
+    background: center no-repeat #fff;
+    z-index: 9999999999999999999999;
+    font-size: 1.5rem;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    border-radius: .3em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background-size: 100% 100%;
+    background-position: center;
+    color: #3F8DBB;
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.6);
+    background-image: linear-gradient(160deg, #3BAFDA, #87C9E1, #B4E0EC, #87C9E1, #3BAFDA);
+    border: 1px solid #2B5367;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(51, 133, 169, .4),
+        inset 0 -2px 5px 1px rgba(135, 201, 225, 1),
+        inset 0 -1px 1px 3px rgba(180, 224, 236, 1);
+}
+@media (max-width:285px){
+    .theta{
+        font-size: 1rem;
+    }
+    .rem{
+        font-size: 0.7rem;
+    }
+}
+
+.theta:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    background-image: linear-gradient(160deg, #A0DCE8, #C3E9F0, #E4F4F8, #C3E9F0, #A0DCE8);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .3), 0 6px 12px rgba(51, 133, 169, .6),
+        inset 0 -3px 7px 2px rgba(135, 201, 225, 1),
+        inset 0 -2px 2px 5px rgba(180, 224, 236, 1);
+}
+
+.an{
+    font-size: 1rem;
 }
